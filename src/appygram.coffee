@@ -9,7 +9,7 @@
 #"message": "User's feedback"
 #"app_json": { a:"simple block of json", app_version:Ti.App.version }
 endpoint = 'http://api.appygram.com'
-exports.sendFeedback = (params, cb, error)->
+exports.sendFeedback = (params, cb)->
   client = Ti.Network.createHTTPClient
     onload: (e)->
       cb null, @responseText
@@ -25,5 +25,6 @@ exports.getFeedbackTypes = (api_key, cb)->
       cb null, JSON.parse @responseText
     onerror:(e)->
       cb e.error
-  client.open 'GET', endpoint + '/api/distrobutions/' + api_key
+  client.open 'GET', endpoint + '/api/topics/' + api_key
+  client.setRequestHeader "Accept", "application/json"
   client.send()

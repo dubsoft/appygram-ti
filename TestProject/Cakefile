@@ -11,7 +11,7 @@ task 'dev', 'compile coffee and put into correct dirs', ->
 task 'andy_dev', 'build and install to device', ->
   console.log('Please define ANDROID_SDK in your environment') unless process.env.ANDROID_SDK?
   process.exit() unless process.env.ANDROID_SDK?
-  andy = spawn 'tsm', ['builder', '3.0.0', 'android', 'install', 'nodoroid', process.env.ANDROID_SDK, __dirname, 'com.wlaurance.testproject', 5]
+  andy = spawn 'tsm', ['builder', '3.0.0', 'android', 'install', 'testproject', process.env.ANDROID_SDK, __dirname, 'com.wlaurance.testproject', 5]
   pipe andy
 
 task 'emulator', 'run on an emulator', ->
