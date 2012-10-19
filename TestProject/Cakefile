@@ -1,0 +1,10 @@
+spawn = require('child_process').spawn
+pipe = (p)->
+  p.stdout.on 'data', (d)->
+    console.log d.toString()
+  p.stderr.on 'data', (d)->
+    console.log d.toString()
+task 'dev', 'compile coffee and put into correct dirs', ->
+  s = spawn 'coffee', ['-o', 'Resources/',  '-cw', 'src/']
+  pipe s
+
