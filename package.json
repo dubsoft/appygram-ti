@@ -1,6 +1,6 @@
 {
   "name": "appygram-ti",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "appygram-ti ===========",
   "main": "index.js",
   "scripts": {
