@@ -1,0 +1,20 @@
+{
+  "name": "appygram-ti",
+  "version": "0.0.0",
+  "description": "appygram-ti ===========",
+  "main": "index.js",
+  "scripts": {
+    "test": "cake test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wlaurance/appygram-ti.git"
+  },
+  "keywords": [
+    "appygram",
+    "titanium",
+    "feedback"
+  ],
+  "author": "Will Laurance",
+  "license": "MIT"
+}
