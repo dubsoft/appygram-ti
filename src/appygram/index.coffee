@@ -1,4 +1,13 @@
 #params should include api_key
+#params can include
+#"api_key":"www.appygram.com/dashboard to get api key for your app"
+#"name": "Example User"
+#"email": "user@example.org
+#"platform": Ti.Platform.osname
+#"software": Ti.Platform.getVersion()
+#"topic": "feedback" || "Questions"
+#"message": "User's feedback"
+#"app_json": { a:"simple block of json", app_version:Ti.App.version }
 endpoint = 'http://api.appygram.com'
 exports.sendFeedback = (params, cb, error)->
   client = Ti.Network.createHTTPClient
