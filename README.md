@@ -3,7 +3,7 @@ appygram-ti
 
 Example of using appygram module
 
-```
+```javascript
 (function() {
   var api_key, appygram, createTextField, f, fields, picker, scrollView, submit, win, _i, _len;
 
