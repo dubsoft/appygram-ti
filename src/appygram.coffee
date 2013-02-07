@@ -8,7 +8,7 @@
 #"topic": "feedback" || "Questions"
 #"message": "User's feedback"
 #"app_json": { a:"simple block of json", app_version:Ti.App.version }
-endpoint = 'http://api.appygram.com'
+endpoint = 'https://arecibo.appygram.com'
 exports.sendFeedback = (params, cb)->
   client = Ti.Network.createHTTPClient
     onload: (e)->
