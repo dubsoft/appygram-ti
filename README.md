@@ -1,5 +1,6 @@
-appygram-ti
-===========
+
+![appygram blue logo](http://www.appygram.com/assets/blue-shape-08092bb8072148a691efccbbb00a9e17.png) -ti
+=========================================================================================================
 
 Example of using appygram module
 
